@@ -9,8 +9,6 @@ addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.6" exclude("org.apache.mave
 
 addSbtPlugin("com.eed3si9n" % "sbt-unidoc" % "0.3.3")
 
-addSbtPlugin("io.get-coursier" % "sbt-coursier" % "1.0.0")
-
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.0")
 
 addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.2.27")
@@ -35,3 +33,4 @@ addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "0.1.18")
 addSbtPlugin("org.scala-native" %% "sbt-scala-native" % "0.3.7")
 
 addSbtPlugin("org.portable-scala" % "sbt-scala-native-crossproject" % "0.4.0")
+addSbtPlugin("ch.epfl.scala" % "sbt-bloop" % "1.0.0-M9+126-bae26ad9")

@@ -365,7 +365,7 @@ lazy val contribJVM = contrib.jvm
 lazy val contribJS = contrib.js
 
 /** ======================== TESTS ======================== **/
-lazy val semanticdbIntegration = project
+/*lazy val semanticdbIntegration = project
   .in(file("semanticdb/integration"))
   .settings(
     description := "Sources to compile to build SemanticDB for tests.",
@@ -388,7 +388,7 @@ lazy val semanticdbIntegration = project
     },
     javacOptions += "-parameters"
   )
-
+*/
 lazy val testkit = project
   .in(file("scalameta/testkit"))
   .settings(
@@ -407,6 +407,7 @@ lazy val testkit = project
   )
   .dependsOn(contribJVM)
 
+/*
 lazy val tests = crossProject(JSPlatform, JVMPlatform)
   .in(file("tests"))
   .settings(
@@ -442,6 +443,7 @@ lazy val tests = crossProject(JSPlatform, JVMPlatform)
   .dependsOn(scalameta, contrib, metap)
 lazy val testsJVM = tests.jvm
 lazy val testsJS = tests.js
+*/
 
 /** ======================== BENCHES ======================== **/
 lazy val bench = project
