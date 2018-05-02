@@ -33,4 +33,3 @@ addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "0.1.18")
 addSbtPlugin("org.scala-native" %% "sbt-scala-native" % "0.3.7")
 
 addSbtPlugin("org.portable-scala" % "sbt-scala-native-crossproject" % "0.4.0")
-addSbtPlugin("ch.epfl.scala" % "sbt-bloop" % "1.0.0-M9+126-bae26ad9")

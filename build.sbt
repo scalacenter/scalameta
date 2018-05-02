@@ -101,7 +101,9 @@ lazy val semanticdb3 = crossProject(JSPlatform, JVMPlatform, NativePlatform)
   .settings(
     publishableSettings,
     protobufSettings,
-    PB.protoSources.in(Compile) := Seq(file("semanticdb/semanticdb3"))
+    PB.protoSources.in(Compile) := {
+      Seq(Keys.baseDirectory.in(ThisBuild).value./("semanticdb")./("semanticdb3"))
+    }
   )
   .nativeSettings(nativeSettings)
   .jvmSettings(
